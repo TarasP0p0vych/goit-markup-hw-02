@@ -1,14 +1,15 @@
 :root {
   /* FONTS */
   --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
   /* COLOR */
-  --primary-text-color: #2e2f42;
-  --secondary-text-color: #434455;
+  --secondary-text-color: #2e2f42;
+  --primary-text-color: #434455;
   --light-background: #e5e5e5;
   --dark-background: #2e2f42;
   --hero-text-color: #ffffff;
   --attention-color: #4d5ae5;
-  --nav-color: #e7e9fc;
+  --nav-color: ##e7e9fc;
   --white-logo-color: #e7e9fc;
   --pressed-state-color: #404bbf;
   --white-team-background: #f4f4fd;
@@ -22,6 +23,11 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  background-color: #ffffff;
+}
+.link {
+  color: inherit;
+  text-decoration: none;
 }
 .header {
   background-color: var(--nav-color);
@@ -32,12 +38,13 @@
   text-transform: uppercase;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
-  color: var(--primary-text-color);
+  line-height: 1.17;
+  color: var(--attention-color);
+  font-family: var(--secondary-font);
 }
-.link {
-  color: inherit;
-  text-decoration: none;
+
+.logo-second-word {
+  color: var(--dark-background);
 }
 .header-nav {
 }
@@ -67,19 +74,21 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  font-style: normal;
+  color: var(--primary-text-color);
 }
 .header-nav-link:hover,
 .header-nav-link:focus,
 .header-address:hover,
 .header-address:focus {
-  background-color: var(--pressed-state-color);
-  color: var(--nav-color);
+  color: var(--pressed-state-color);
 }
 .hero {
   background-color: var(--dark-background);
 }
 .section {
+}
+.header-address {
+  font-style: normal;
 }
 .hero-title {
   font-weight: 700;
@@ -99,6 +108,7 @@
   background-color: var(--attention-color);
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -142,6 +152,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 .service {
 }
@@ -182,8 +193,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
-
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
@@ -193,15 +202,20 @@
 }
 .footer {
   background-color: var(--dark-background);
+  font-family: var(--secondary-font);
 }
 .footer-logo-link {
   font-weight: 800;
+  color: var(--attention-color);
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.17;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.footer-second-word {
   color: var(--white-team-background);
 }
 .footer-paragraph {
@@ -210,6 +224,7 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white-team-background);
+  font-family: var(--primary-font);
 }
 
 .filter-list {
@@ -217,7 +232,7 @@
 .filter-item {
 }
 .filter-btn {
-  background-color: var(--white-logo-color);
+  background-color: var(--white-team-background);
   color: var(--attention-color);
   font-weight: 500;
   font-size: 16px;
@@ -225,11 +240,13 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
+  font-family: var(--primary-font);
+  cursor: pointer;
 }
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--pressed-state-color);
-  color: var(--white-logo-color);
+  color: var(--hero-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -239,6 +256,7 @@
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  cursor: pointer;
 }
 .article-list {
 }
