@@ -6,34 +6,29 @@
   --secondary-text-color: #2e2f42;
   --primary-text-color: #434455;
   --light-background: #e5e5e5;
-  --dark-background: #2e2f42;
-  --hero-text-color: #ffffff;
+  --dark-navy-color: #2e2f42;
+  --white-color: #ffffff;
   --attention-color: #4d5ae5;
   --nav-color: ##e7e9fc;
   --white-logo-color: #e7e9fc;
   --pressed-state-color: #404bbf;
-  --white-team-background: #f4f4fd;
+  --white-cornflower-color: #f4f4fd;
 }
 /* Base styles */
 .page {
   font-family: var(--primary-font);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 .link {
   color: inherit;
   text-decoration: none;
 }
+/* Header styles */
 .header {
   background-color: var(--nav-color);
 }
 .header-logo {
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   font-weight: 800;
@@ -42,9 +37,8 @@
   color: var(--attention-color);
   font-family: var(--secondary-font);
 }
-
 .logo-second-word {
-  color: var(--dark-background);
+  color: var(--dark-navy-color);
 }
 .header-nav {
 }
@@ -53,7 +47,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--dark-background);
+  color: var(--dark-navy-color);
 }
 .list {
   list-style: none;
@@ -66,12 +60,7 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.header-address-list {
-}
-.header-address-item {
-}
 .header-address {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -84,11 +73,11 @@
 .header-address:focus {
   color: var(--pressed-state-color);
 }
+/* Hero styles */
 .hero {
-  background-color: var(--dark-background);
+  background-color: var(--dark-navy-color);
 }
-.section {
-}
+
 .header-address {
   font-style: normal;
 }
@@ -98,7 +87,7 @@
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--hero-text-color);
+  color: var(--white-color);
 }
 .hero-btn {
   font-family: inherit;
@@ -108,7 +97,7 @@
   align-items: center;
   letter-spacing: 0.04em;
   background-color: var(--attention-color);
-  color: #ffffff;
+  color: var(--white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
@@ -121,44 +110,24 @@
   align-items: center;
   letter-spacing: 0.04em;
   background-color: var(--pressed-state-color);
-  color: #ffffff;
+  color: var(--white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.features {
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
 
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-.feature-list {
-}
-.feature-item {
-}
 .feature-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--dark-background);
+  color: var(--dark-navy-color);
 }
 .feature-desc {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-.service {
-}
+
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -166,25 +135,16 @@
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--dark-background);
+  color: var(--dark-navy-color);
 }
-.service-list {
-}
-.service-item {
-}
-.service-img {
-}
+
 .team {
-  background-color: var(--white-team-background);
-}
-.team-list {
+  background-color: var(--white-cornflower-color);
 }
 .team-item {
-  background-color: var(--hero-text-color);
+  background-color: var(--white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.team-img {
 }
 .team-name {
   font-weight: 500;
@@ -195,19 +155,16 @@
   color: var(--secondary-text-color);
 }
 .team-role {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   color: var(--primary-text-color);
 }
+/* Footer styles*/
 .footer {
-  background-color: var(--dark-background);
+  background-color: var(--dark-navy-color);
   font-family: var(--secondary-font);
 }
 .footer-logo-link {
@@ -222,23 +179,18 @@
 }
 
 .footer-second-word {
-  color: var(--white-team-background);
+  color: var(--white-cornflower-color);
 }
 .footer-paragraph {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--white-team-background);
+  color: var(--white-cornflower-color);
   font-family: var(--primary-font);
 }
 
-.filter-list {
-}
-.filter-item {
-}
 .filter-btn {
-  background-color: var(--white-team-background);
+  background-color: var(--white-cornflower-color);
   color: var(--attention-color);
   font-weight: 500;
   font-size: 16px;
@@ -252,11 +204,10 @@
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--pressed-state-color);
-  color: var(--hero-text-color);
+  color: var(--white-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -264,24 +215,18 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.article-list {
-}
+
 .row-item {
-  background-color: var(--hero-text-color);
-}
-.row-item-link {
+  background-color: var(--white-color);
 }
 .article-name {
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--dark-background);
+  color: var(--dark-navy-color);
 }
 .article-type {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
